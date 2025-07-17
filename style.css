@@ -1,6 +1,6 @@
 body {
   font-family: "Times New Roman", serif;
-  background: #ffe6f0; /* rosado claro */
+  background: #ffe6f0; /* fondo general rosado claro */
   padding: 20px;
   margin: 0;
 }
@@ -35,7 +35,7 @@ h1 {
 }
 
 .ramo {
-  background-color: #ffd1dc; /* rosado claro para ramos normales */
+  background-color: #b03060; /* disponible */
   padding: 8px;
   margin: 6px 0;
   border-radius: 5px;
@@ -43,16 +43,17 @@ h1 {
   cursor: pointer;
   transition: background-color 0.3s ease;
   user-select: none;
-}
-
-.ramo.aprobado {
-  background-color: #c94f7c; /* rosado fuerte */
   color: white;
-  text-decoration: line-through;
 }
 
 .ramo.bloqueado {
-  background-color: #c94f7c; /* rosado oscuro (bloqueado con prerequisitos no cumplidos) */
+  background-color: #e48aaa; /* bloqueado */
   color: white;
   cursor: not-allowed;
+}
+
+.ramo.aprobado {
+  background-color: #ffd1dc; /* aprobado */
+  color: black;
+  text-decoration: line-through;
 }
